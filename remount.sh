@@ -73,8 +73,8 @@ do
 			sudo bash -c "df >>/var/log/remount.log"
 			sudo bash -c "echo \"/-------------------------------------------------/\" >>/var/log/remount.log"
 			sudo bash -c "echo \"mount $mdevice $mpath $mtype $moption $mdump $mpass\" >>/var/log/remount.log"
-			sudo bash -c "echo \"/*************************************************/\" >>/var/log/remount.log"
 			sudo mount $mdevice $mpath $mtype $moption $mdump $mpass >>/var/log/remount.log
+			sudo bash -c "echo \"/*************************************************/\" >>/var/log/remount.log"
 		fi
 
 		IFS=$'\n'
