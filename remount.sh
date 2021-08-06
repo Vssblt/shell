@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# How to use: 
+# sudo ./remount.sh
+
 sleep 180
 
 i=0
