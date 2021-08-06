@@ -68,7 +68,7 @@ do
 			mtype="-t ${words[2]}"
 			moption="-o ${words[3]}"
 			sudo bash -c "echo \"/*************************************************/\" >>/var/log/remount.log"
-			sudo bash -c "echo \"Warning! Device detach! Date: `date`. Try to remount! df output:\" >>/var/log/remount.log"
+			sudo bash -c "echo \"Warning! Device detached! File System: ${words[1]}.Date: `date`. Try to remount! df output:\" >>/var/log/remount.log"
 			sudo bash -c "echo \"/-------------------------------------------------/\" >>/var/log/remount.log"
 			sudo bash -c "df >>/var/log/remount.log"
 			sudo bash -c "echo \"/-------------------------------------------------/\" >>/var/log/remount.log"
